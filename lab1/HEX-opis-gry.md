@@ -5,9 +5,10 @@ To duńska gra planszowa dla dwóch osób, grana na planszy w kształcie rombu z
 
 #Zasady
 > [!IMPORTANT]
-> Wymiary planszy zwykle wynoszą 11 na 11 pól, czyli razem 121 (plansza "tradycyjna")
-> Gracze mają przypisane przeciwległe boki planszy: jeden łączy góra–dół, drugi lewo–prawo. 
+> Wymiary planszy zwykle wynoszą 11 na 11 pól, czyli razem 121 (plansza "tradycyjna").
 > ![Plansza obrazująca zwycięstwo gracza niebieskiego](https://en.wikipedia.org/wiki/Hex_(board_game)#/media/File:Hex-board-11x11-(2).svg)
+> Gracze mają przypisane przeciwległe boki planszy: jeden łączy góra–dół, drugi lewo–prawo. 
+> 
 >Aby wyrównać przewagę gracza rozpoczynającego, stosuje się tzw. regułę “torty” (swap rule, pie rule): po pierwszym ruchu drugi gracz może zdecydować, czy zamienić się stronami (czyli przyjąć pierwszym ruchem – pierwszy ruch już wykonany staje się jego) czy nie. 
 >
 > W trakcie partii często stosuje się pojęcia takie jak „most” (bridge) — wzorzec bezpiecznego połączenia dwóch własnych kamieni, nawet jeśli pomiędzy nimi są dwa puste pola; przeciwnik zagrywając w jedno z nich, pozwala graczowi zająć to drugie i utrzymać połączenie. 
