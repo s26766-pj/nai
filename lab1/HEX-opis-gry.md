@@ -15,7 +15,7 @@ To duńska gra planszowa dla dwóch osób, grana na planszy w kształcie rombu z
 >
 >Każdy z dwóch graczy biorących udział w grze dysponuje kamieniami o odmiennych kolorach. Gracze na przemian układają kamienie na wolnych polach planszy, tak, aby sąsiadujące utworzyły nieprzerwany ciąg łączący boki planszy własnego koloru. Wygrywa ten z graczy, który ułoży taki ciąg jako pierwszy. Często stosuje się dodatkową zasadę, że gracz wykonujący ruch jako drugi w pierwszym swoim ruchu zamiast położyć swój kamień na wolnym polu może 'przejąć' kamień przeciwnika, tzn. zamienić jego kamień na swój.
 
-![Plansza obrazująca zwycięstwo gracza niebieskiego](https://en.wikipedia.org/wiki/Hex_(board_game)#/media/File:Hex-board-11x11-(2).svg)
+[Plansza obrazująca zwycięstwo gracza niebieskiego](https://en.wikipedia.org/wiki/Hex_(board_game)#/media/File:Hex-board-11x11-(2).svg)
 
 # Historia
 W 1942 duński poeta i matematyk Piet Hein wynalazł grę, którą dziś nazywamy Hex. Piet wynalazł ją podczas rozważań nad zagadnieniem czterech barw (hipotezą, podówczas jeszcze nieudowodnioną, że cztery kolory wystarczą do stworzenia dowolnej mapy tak, aby żadne dwa sąsiadujące państwa nie były tego samego koloru). Gra została wprowadzona w Instytucie Nielsa Bohra. W Danii zyskała popularność pod nazwą Polygon. Gra była drukowana na papierowej podkładce i grano na niej przy użyciu pisaków. Duńskie gazety drukowały miesiącami problemy do rozwiązania w Polygon.
