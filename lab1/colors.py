@@ -1,0 +1,30 @@
+# Centralized color definitions for the Hex game UI
+
+# Primary team colors
+COLOR_RED = (200, 0, 0)
+COLOR_BLUE = (0, 0, 200)
+
+# Fills for stones
+COLOR_RED_FILL = (255, 100, 100)
+COLOR_BLUE_FILL = (100, 100, 255)
+COLOR_EMPTY_HEX = (220, 220, 220)
+
+# Neutrals
+COLOR_BLACK = (0, 0, 0)
+COLOR_WHITE = (255, 255, 255)
+
+# Paths and overlays
+COLOR_LINE_RED = (180, 0, 0)
+COLOR_WINNING_PATH = (255, 255, 0)
+COLOR_BANNER_BG = (20, 20, 20)
+COLOR_TIE = (80, 80, 80)
+
+# Menu/UI colors
+COLOR_BG = (245, 245, 245)
+COLOR_ITEM_BG = (230, 230, 230)
+COLOR_ITEM_BG_HOVER = (210, 210, 210)
+COLOR_START_ENABLED = (0, 160, 60)
+COLOR_START_DISABLED = (160, 160, 160)
+COLOR_START_BORDER = (0, 90, 40)
+
+
