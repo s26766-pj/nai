@@ -19,12 +19,21 @@ PLAYERS = [
     "human1",
     "human2",
     "Minimax",
-    "MCTS",
-    "Hybrid",
 ]
 
 
 def generate_hex_points(cx, cy, size):
+    """
+    Generate the six corner points of a regular hexagon.
+    
+    Args:
+        cx (float): Center x coordinate
+        cy (float): Center y coordinate
+        size (float): Radius of the hexagon
+        
+    Returns:
+        list: List of (x, y) tuples representing the hexagon corners
+    """
     points = []
     for i in range(6):
         angle_deg = 60 * i - 30
@@ -36,6 +45,16 @@ def generate_hex_points(cx, cy, size):
 
 
 def point_in_polygon(point, polygon):
+    """
+    Check if a point is inside a polygon using ray casting algorithm.
+    
+    Args:
+        point (tuple): Point to test (x, y)
+        polygon (list): List of polygon vertices as (x, y) tuples
+        
+    Returns:
+        bool: True if point is inside polygon, False otherwise
+    """
     x, y = point
     inside = False
     n = len(polygon)
@@ -54,6 +73,20 @@ def point_in_polygon(point, polygon):
 
 
 def draw_hex(surface, center, size, fill_color, outline_color=COLOR_BLACK, outline_width=3):
+    """
+    Draw a hexagon on the given surface.
+    
+    Args:
+        surface: Pygame surface to draw on
+        center (tuple): Center coordinates (x, y)
+        size (float): Radius of the hexagon
+        fill_color (tuple): Fill color of the hexagon
+        outline_color (tuple, optional): Outline color. Defaults to COLOR_BLACK.
+        outline_width (int, optional): Outline width. Defaults to 3.
+        
+    Returns:
+        list: List of hexagon corner points
+    """
     points = generate_hex_points(center[0], center[1], size)
     pygame.draw.polygon(surface, fill_color, points, 0)
     pygame.draw.polygon(surface, outline_color, points, outline_width)
@@ -61,6 +94,15 @@ def draw_hex(surface, center, size, fill_color, outline_color=COLOR_BLACK, outli
 
 
 def run_menu() -> tuple[str, str]:
+    """
+    Run the player selection menu interface.
+    
+    Creates an interactive menu where users can drag and drop players
+    to assign them to red and blue sides. Players can be human1, human2, or Minimax AI.
+    
+    Returns:
+        tuple[str, str]: (red_player, blue_player) - selected players for each side
+    """
     pygame.init()
     screen = pygame.display.set_mode((1000, 650))
     pygame.display.set_caption("Hex - Choose Players")
@@ -81,17 +123,14 @@ def run_menu() -> tuple[str, str]:
     human_left_x = center_x - (hex_radius * 2 + gap_x) // 2
     human_right_x = center_x + (hex_radius * 2 + gap_x) // 2
 
-    # Bottom row: 3 AI hexes centered
+    # Bottom row: 1 AI hex centered
     ai_y = humans_y + hex_radius + gap_y
-    ai_spacing = hex_radius * 2 + gap_x
-    ai_xs = [center_x - ai_spacing, center_x, center_x + ai_spacing]
+    ai_center_x = center_x
 
     layout = [
         ("human1", (human_left_x, humans_y)),
         ("human2", (human_right_x, humans_y)),
-        ("Minimax", (ai_xs[0], ai_y)),
-        ("MCTS", (ai_xs[1], ai_y)),
-        ("Hybrid", (ai_xs[2], ai_y)),
+        ("Minimax", (ai_center_x, ai_y)),
     ]
 
     # Player items as hexagons with precomputed polygons
