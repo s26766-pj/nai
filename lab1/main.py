@@ -8,11 +8,19 @@ from game import (
     reset_for_new_game,
 )
 from ai_minimax import compute_minimax_move
-from ai_mcts import compute_mcts_move
-from ai_hybrid import compute_hybrid_move
 from menu import run_menu
 
 def main():
+    """
+    Main game loop for the Hex game.
+    
+    Handles the complete game flow including:
+    - Player selection via menu
+    - Game board initialization
+    - Turn-based gameplay
+    - AI move computation
+    - Win detection and game reset
+    """
     # Run menu first to select players
     red_player, blue_player = run_menu()
 
@@ -67,13 +75,8 @@ def main():
 
         # If it's an AI player's turn and no result yet, make AI move automatically
         if board.winner is None:
-            if current_player == "red" and red_player in ("Minimax", "MCTS", "Hybrid"):
-                if red_player == "Minimax":
-                    ai_move = compute_minimax_move(board, "red", depth=2)
-                elif red_player == "MCTS":
-                    ai_move = compute_mcts_move(board, "red", iterations=500)
-                else:
-                    ai_move = compute_hybrid_move(board, "red")
+            if current_player == "red" and red_player == "Minimax":
+                ai_move = compute_minimax_move(board, "red", depth=2)
                 if ai_move and board.state.get(ai_move) is None:
                     board.state[ai_move] = "red"
                     print(f"Player red clicked {ai_move}")
@@ -85,13 +88,8 @@ def main():
                     current_player = "blue"
                     if previous_player == "blue":
                         turn_number += 1
-            elif current_player == "blue" and blue_player in ("Minimax", "MCTS", "Hybrid"):
-                if blue_player == "Minimax":
-                    ai_move = compute_minimax_move(board, "blue", depth=2)
-                elif blue_player == "MCTS":
-                    ai_move = compute_mcts_move(board, "blue", iterations=500)
-                else:
-                    ai_move = compute_hybrid_move(board, "blue")
+            elif current_player == "blue" and blue_player == "Minimax":
+                ai_move = compute_minimax_move(board, "blue", depth=2)
                 if ai_move and board.state.get(ai_move) is None:
                     board.state[ai_move] = "blue"
                     print(f"Player blue clicked {ai_move}")
