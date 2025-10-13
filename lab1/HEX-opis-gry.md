@@ -25,6 +25,23 @@ Niezależnie od Heina grę Hex wymyślił w roku 1948 amerykański matematyk Joh
 # Teoria
 John Nash udowodnił nie-wprost w 1949 roku, że gra nie może zakończyć się remisem oraz że bez względu na rozmiar planszy, zawsze istnieje strategia wygrywająca dla gracza wykonującego pierwszy ruch. Nie był to jednak dowód konstruktywny – wykazywał wyłącznie istnienie takiej strategii, a nie, jak ona wygląda. Wyliczono strategie wygrywające dla każdego ruchu na planszach 7×7, zaś na planszach 8×8 i 9×9 przy założeniu, że pierwszy gracz rozpoczyna na środku planszy.
 
+# Testy rozgrywki
+> [!IMPORTANT]
+> test1: depth=2 ja zaczynam
+> https://www.loom.com/share/2a1dc21ba6d94964b7d4bf6bb3ec1a17
+> 
+> test2: depth=2 AI zaczyna
+> https://www.loom.com/share/b44d585b90094bfca0af40880cbc7e8d
+> 
+> test3: depth=3 ja zaczynam
+> https://www.loom.com/share/4e9de5ff704c44e1a2cb4896e45a4b48
+> 
+> test4: depth=3 AI zaczyna
+> https://www.loom.com/share/20a4ab10dda84d3c91689841e3b6854b
+>
+> test5: rozgrywka w pygame:
+> https://www.loom.com/share/515a6e6aca9f4a97815d62d0f7c8f8c5
+
 > [!NOTE]
 > **Bibliografia:**
 > - https://pl.wikipedia.org/wiki/Hex_(gra_planszowa)
