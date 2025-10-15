@@ -1,2 +1,4 @@
-for game in console: pip install easyAI
-for game in pygame: pip install pygame
+python==3.12
+easyAI==2.0.12
+
+run: python hex.py
