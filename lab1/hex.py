@@ -14,7 +14,7 @@ Opis:
 
 Autorzy:
     Kamil Koniak s26766
-	Kamil Suchomski s21974
+    Kamil Suchomski s21974
 
 Zasady gry:
     - Gracze stawiają na przemian po jednym kamieniu na pustym polu.
@@ -29,7 +29,6 @@ Wymagania środowiskowe:
 Uruchomienie:
     $ python hex_full.py
     → podaj głębokość (2 zalecane dla 11×11) oraz kto zaczyna (Ty/AI).
-
 """
 
 from easyAI import TwoPlayerGame, AI_Player, Human_Player, Negamax
@@ -53,19 +52,19 @@ SYMBOL = {EMPTY: ".", P1: "X", P2: "O"}
 # ------- utils: coords & IO -----------------------------------------------------
 
 def parse_move(move_str):
-    """Parse user input into internal (row, col) coordinates.
+    """Zamienia tekst ruchu na współrzędne (wiersz, kolumna) w indeksowaniu 0-based.
 
-    Parameters:
+    Argumenty:
         move_str (str): Tekst ruchu. Akceptowane formy:
             - "A1", "B7", "K11" (litera kolumny + numer wiersza, 1-indeksowane),
             - "A 1" (litera i liczba rozdzielone spacją),
             - "7 8" (wiersz i kolumna jako liczby, 1-indeksowane).
 
-    Returns:
+    Zwraca:
         tuple[int, int]: Para (r, c) w indeksowaniu 0-based.
 
-    Raises:
-        ValueError: Gdy format jest niepoprawny lub puste wejście.
+    Wyjątki:
+        ValueError: Gdy format jest niepoprawny lub wejście jest puste.
     """
     s = move_str.strip().replace(",", " ").replace(";", " ")
     parts = s.split()
@@ -97,12 +96,12 @@ def parse_move(move_str):
 
 
 def move_to_str(rc):
-    """Convert (row, col) 0-based tuple to human-friendly string like 'A1'.
+    """Formatuje współrzędne (0-based) do postaci przyjaznej użytkownikowi, np. 'A1'.
 
-    Parameters:
+    Argumenty:
         rc (tuple[int, int]): Współrzędne 0-based (r, c).
 
-    Returns:
+    Zwraca:
         str: Np. "A1", "F6".
     """
     r, c = rc
@@ -115,14 +114,14 @@ NEIGH_STEPS = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, 1), (1, -1)]
 
 
 def neighbors(r, c):
-    """Iterate over valid hex neighbors (6 directions) for a given cell.
+    """Generator sąsiadów heksowych (6 kierunków) dla danego pola.
 
-    Parameters:
+    Argumenty:
         r (int): Wiersz (0..ROWS-1).
         c (int): Kolumna (0..COLS-1).
 
-    Yields:
-        tuple[int, int]: Współrzędne sąsiada (rr, cc) w granicach planszy.
+    Zwraca:
+        iterator[tuple[int, int]]: Współrzędne sąsiadów (rr, cc) w granicach planszy.
     """
     for dr, dc in NEIGH_STEPS:
         rr, cc = r + dr, c + dc
@@ -133,19 +132,18 @@ def neighbors(r, c):
 # ------- victory detection ------------------------------------------------------
 
 def path_exists(board, player):
-    """Check if `player` already formed a winning path.
+    """Sprawdza, czy gracz ułożył już zwycięską ścieżkę krawędź-krawędź.
 
-    Dla P1 sprawdzamy ścieżkę łączącą górę (r=0) z dołem (r=ROWS-1).
-    Dla P2 sprawdzamy ścieżkę łączącą lewo (c=0) z prawo (c=COLS-1).
+    Dla P1 weryfikuje połączenie GÓRA (r=0) ↔ DÓŁ (r=ROWS-1).
+    Dla P2 weryfikuje połączenie LEWO (c=0) ↔ PRAWO (c=COLS-1).
+    Implementacja oparta na BFS.
 
-    Implementacja oparta o BFS.
-
-    Parameters:
-        board (list[list[int]]): Aktualna plansza.
+    Argumenty:
+        board (list[list[int]]): Aktualny stan planszy.
         player (int): P1 (1) lub P2 (2).
 
-    Returns:
-        bool: True jeśli istnieje połączenie krawędź-krawędź, w przeciwnym razie False.
+    Zwraca:
+        bool: True, jeśli istnieje połączenie krawędź-krawędź; w p.p. False.
     """
     visited = [[False] * COLS for _ in range(ROWS)]
     dq = deque()
@@ -184,38 +182,37 @@ def path_exists(board, player):
 # ------- heuristic: faster shortest-path + caches -------------------------------
 
 def board_key(board):
-    """Create a hashable representation of the board for caching.
+    """Buduje niezmienniczy (hashowalny) klucz planszy do cache’owania.
 
-    Parameters:
-        board (list[list[int]]): Plansza w postaci list.
+    Argumenty:
+        board (list[list[int]]): Plansza jako listy list.
 
-    Returns:
-        tuple[tuple[int, ...], ...]: Niezmiennicza (hashowalna) forma planszy.
+    Zwraca:
+        tuple[tuple[int, ...], ...]: Niezmiennicza reprezentacja planszy.
     """
     return tuple(tuple(row) for row in board)
 
 
 @lru_cache(maxsize=200_000)
 def _shortest_path_cost_cached(key, player):
-    """Compute the (approximate) shortest connection cost for `player` (cached).
+    """Szacuje koszt najkrótszej ścieżki łączącej krawędzie dla danego gracza (cache).
 
-    Używa algorytmu Dijkstry od krawędzi startowej do krawędzi docelowej.
+    Metoda: algorytm Dijkstry od krawędzi startowej do docelowej.
     Koszt pola:
         - własny kamień: 0
         - puste pole:    1
-        - przeciwnika:   3
+        - kamień przeciwnika: 3
 
-    Parameters:
-        key (tuple[tuple[int, ...], ...]): Hashowalny klucz planszy (z `board_key`).
+    Argumenty:
+        key (tuple[tuple[int, ...], ...]): Hashowalny klucz planszy (patrz `board_key`).
         player (int): P1 (1) lub P2 (2).
 
-    Returns:
-        int: Koszt najtańszej ścieżki łączącej odpowiednie krawędzie.
-             Wartość bardzo duża (INF) jeśli nieosiągalne.
+    Zwraca:
+        int: Najmniejszy znaleziony koszt przejścia; INF jeśli nieosiągalne.
 
-    Notes:
-        Funkcja jest cache’owana (`lru_cache`) — dramatycznie redukuje liczbę
-        powtórnych obliczeń w drzewie gry.
+    Uwagi:
+        Funkcja jest cache’owana (`functools.lru_cache`), co radykalnie redukuje
+        liczbę powtórek obliczeń w drzewie przeszukiwania.
     """
     board = [list(row) for row in key]
     INF = 10**9
@@ -272,61 +269,60 @@ def _shortest_path_cost_cached(key, player):
 
 
 def shortest_path_cost(board, player):
-    """Publiczna, niecache’owana w interfejsie funkcja na bazie `_...cached`.
+    """Publiczny wrapper (niecache’owany) do wyznaczania kosztu najkrótszej ścieżki.
 
-    Parameters:
-        board (list[list[int]]): Aktualna plansza.
+    Argumenty:
+        board (list[list[int]]): Aktualny stan planszy.
         player (int): P1 (1) lub P2 (2).
 
-    Returns:
-        int: Szacowany koszt najkrótszej ścieżki.
+    Zwraca:
+        int: Szacowany koszt najkrótszej ścieżki gracza.
     """
     return _shortest_path_cost_cached(board_key(board), player)
 
 
 @lru_cache(maxsize=200_000)
 def _path_exists_cached(key, player):
-    """Cache’owana wersja `path_exists`.
+    """Cache’owana wersja sprawdzania zwycięskiej ścieżki.
 
-    Parameters:
+    Argumenty:
         key (tuple[tuple[int, ...], ...]): Hashowalny klucz planszy.
         player (int): P1 (1) lub P2 (2).
 
-    Returns:
-        bool: True jeśli istnieje ścieżka wygrywająca.
+    Zwraca:
+        bool: True, jeśli gracz ma połączenie krawędź-krawędź.
     """
     board = [list(row) for row in key]
     return path_exists(board, player)
 
 
 def path_exists_cached(board, player):
-    """Sprawdzenie zwycięstwa z cache.
+    """Sprawdza zwycięstwo z wykorzystaniem cache.
 
-    Parameters:
-        board (list[list[int]]): Aktualna plansza.
+    Argumenty:
+        board (list[list[int]]): Aktualny stan planszy.
         player (int): P1 (1) lub P2 (2).
 
-    Returns:
-        bool: True jeśli `player` ma już połączenie krawędzi.
+    Zwraca:
+        bool: True, jeśli gracz ma już połączenie krawędź-krawędź.
     """
     return _path_exists_cached(board_key(board), player)
 
 
 def heuristic_score(board, current_player):
-    """Evaluate position for `current_player`.
+    """Wartościuje pozycję z punktu widzenia wskazanego gracza.
 
     Heurystyka:
         - natychmiastowe ±10000 przy wykryciu wygranej/przegranej,
-        - w przeciwnym razie różnica kosztów najkrótszych ścieżek
-          (opp_cost - my_cost) przeskalowana ×50,
-        - lekki bonus za kontakt z własnymi krawędziami start/koniec.
+        - w przeciwnym razie: (koszt_opp − koszt_mój) × 50,
+        - lekki bonus za kontakt z własnymi krawędziami (otwarcie gry).
 
-    Parameters:
-        board (list[list[int]]): Aktualna plansza.
-        current_player (int): Gracz, dla którego liczymy ocenę (P1 lub P2).
+    Argumenty:
+        board (list[list[int]]): Aktualny stan planszy.
+        current_player (int): Gracz, dla którego liczona jest ocena (P1 lub P2).
 
-    Returns:
-        int: Wartość punktowa pozycji (większa = lepsza dla `current_player`).
+    Zwraca:
+        int: Im większa, tym lepsza pozycja dla `current_player`.
     """
     key = board_key(board)
     me = current_player
@@ -341,7 +337,7 @@ def heuristic_score(board, current_player):
     opp_cost = _shortest_path_cost_cached(key, opp)
     diff = opp_cost - my_cost
 
-    # Lekka preferencja kontaktu z brzegiem (ważne dla P2 na kolumnie A, dla P1 na wierszu 1), pomaga w 'otwarciu'
+    # Preferencja kontaktu z brzegiem (pomaga w otwarciu i ukierunkowaniu gry).
     edge_bonus = 0
     if me == P1:
         if any(board[0][c] == P1 for c in range(COLS)):
@@ -363,40 +359,40 @@ CENTER_R, CENTER_C = (ROWS - 1) / 2.0, (COLS - 1) / 2.0
 
 
 def center_priority_key(rc):
-    """Key function preferring moves closer to the board center.
+    """Funkcja klucza sortowania preferująca ruchy bliższe środkowi planszy.
 
-    Parameters:
+    Argumenty:
         rc (tuple[int, int]): Pozycja pola (r, c) 0-based.
 
-    Returns:
-        tuple[float, int, int]: Klucz sortowania — mniejszy = „lepszy”.
+    Zwraca:
+        tuple[float, int, int]: Klucz sortowania (mniejszy = „lepszy”).
     """
     r, c = rc
-    # mniejsza odległość do środka -> wyżej na liście
     return (abs(r - CENTER_R) + abs(c - CENTER_C), r, c)
 
 
 # ------- Game class -------------------------------------------------------------
 
 class HexGame(TwoPlayerGame):
-    """easyAI `TwoPlayerGame` implementation for Hex 11×11.
+    """Implementacja easyAI `TwoPlayerGame` dla gry Hex 11×11.
 
     Atrybuty:
-        players (list): [Human_Player(), AI_Player()] w zależności od startera.
+        players (list): Dwuelementowa lista graczy (Human/AI) w kolejności tur.
         board (list[list[int]]): Plansza 11×11 (0=puste, 1=P1, 2=P2).
         current_player (int): Numer aktualnego gracza wg easyAI (1 lub 2).
-        history (list[tuple[int, int]]): Stos zagranych ruchów (r, c).
+        history (list[tuple[int, int]]): Stos zagranych posunięć (r, c).
 
-    Notes:
-        - `scoring()` musi zwracać ocenę dla aktualnego gracza (wymóg easyAI).
-        - `make_move` i `unmake_move` wspierają przeszukiwanie drzewa gry.
+    Uwagi:
+        - `scoring()` powinno zwracać ocenę z perspektywy gracza będącego na ruchu
+          (wymóg frameworka easyAI).
+        - `make_move`/`unmake_move` wspierają przeszukiwanie drzewa gry.
     """
 
     def __init__(self, players):
-        """Initialize empty board and set the first player.
+        """Inicjuje pustą planszę i ustawia pierwszego gracza.
 
-        Parameters:
-            players (list[AI_Player|Human_Player]): Dwóch graczy w kolejności tur.
+        Argumenty:
+            players (list[AI_Player|Human_Player]): Dwóch graczy zgodnie z kolejnością tur.
         """
         self.players = players
         self.board = [[EMPTY] * COLS for _ in range(ROWS)]
@@ -404,23 +400,23 @@ class HexGame(TwoPlayerGame):
         self.history = []
 
     def possible_moves(self):
-        """Return all legal moves as strings, ordered center-first.
+        """Zwraca wszystkie legalne ruchy jako napisy, posortowane preferencją środka.
 
-        Returns:
-            list[str]: Lista ruchów w formacie "A1", "B7", ...
+        Zwraca:
+            list[str]: Ruchy w formacie "A1", "B7", ...
         """
         empties = [(r, c) for r in range(ROWS) for c in range(COLS) if self.board[r][c] == EMPTY]
         empties.sort(key=center_priority_key)
         return [move_to_str(rc) for rc in empties]
 
     def make_move(self, move):
-        """Apply a move on the board.
+        """Wykonuje ruch na planszy.
 
-        Parameters:
+        Argumenty:
             move (str): Ruch w formacie akceptowanym przez `parse_move`.
 
-        Raises:
-            ValueError: Gdy ruch poza planszą lub pole zajęte.
+        Wyjątki:
+            ValueError: Gdy ruch wychodzi poza planszę lub pole jest zajęte.
         """
         r, c = parse_move(move)
         if not (0 <= r < ROWS and 0 <= c < COLS):
@@ -431,20 +427,16 @@ class HexGame(TwoPlayerGame):
         self.history.append((r, c))
 
     def unmake_move(self, move):
-        """Undo last move (for search).
+        """Cofa ostatni ruch (używane podczas przeszukiwania).
 
-        Parameters:
-            move (str): Ignorowany — zgodność z interfejsem easyAI.
+        Argumenty:
+            move (str): Ignorowane — zgodność z interfejsem easyAI.
         """
         r, c = self.history.pop()
         self.board[r][c] = EMPTY
 
     def show(self):
-        """Print the current board state in a hex-like ASCII layout.
-
-        Returns:
-            None
-        """
+        """Wyświetla aktualny stan planszy w układzie ASCII przypominającym heksy."""
         header = "   " + " ".join(LETTERS)
         print(header)
         for r in range(ROWS):
@@ -456,27 +448,27 @@ class HexGame(TwoPlayerGame):
         print("Podaj ruch np. A1, B7, 'A 1' albo '7 8'.")
 
     def win(self):
-        """Tell easyAI when the game is won.
+        """Informuje easyAI, czy gra została wygrana przez któregokolwiek gracza.
 
-        Returns:
-            bool: True jeśli którykolwiek gracz ma ścieżkę zwycięstwa.
+        Zwraca:
+            bool: True, jeśli istnieje zwycięska ścieżka P1 lub P2.
         """
         return path_exists_cached(self.board, P1) or path_exists_cached(self.board, P2)
 
     def is_over(self):
-        """Tell easyAI when the game is over (win or full board).
+        """Informuje easyAI o zakończeniu gry (wygrana lub pełna plansza).
 
-        Returns:
-            bool: True jeśli koniec gry.
+        Zwraca:
+            bool: True, jeśli gra dobiegła końca.
         """
         if self.win():
             return True
         return all(self.board[r][c] != EMPTY for r in range(ROWS) for c in range(COLS))
 
     def scoring(self):
-        """Position evaluation for the current player (required by easyAI).
+        """Zwraca ocenę pozycji dla gracza będącego na ruchu (wymóg easyAI).
 
-        Returns:
+        Zwraca:
             int: Ocena pozycji dla `self.current_player`.
         """
         return heuristic_score(self.board, self.current_player)
@@ -485,15 +477,15 @@ class HexGame(TwoPlayerGame):
 # ------- Verbose AI wrapper (czytelne komunikaty + timing) ----------------------
 
 class VerboseAI(AI_Player):
-    """AI_Player wrapper that prints thinking progress and timing."""
+    """Opakowanie AI_Player dodające logi o myśleniu i czasie obliczeń."""
 
     def ask_move(self, game):
-        """Ask AI for a move while printing logs and elapsed time.
+        """Prosi AI o ruch, wypisując postęp oraz czas obliczeń.
 
-        Parameters:
+        Argumenty:
             game (TwoPlayerGame): Aktualny stan gry.
 
-        Returns:
+        Zwraca:
             str: Wybrany ruch (np. "F6").
         """
         print("\n[AI] Myślę nad ruchem…")
@@ -507,9 +499,9 @@ class VerboseAI(AI_Player):
 # ------- CLI helpers ------------------------------------------------------------
 
 def ask_depth():
-    """Prompt for Negamax search depth.
+    """Pyta użytkownika o głębokość przeszukiwania Negamax.
 
-    Returns:
+    Zwraca:
         int: Głębokość przeszukiwania (domyślnie 2; minimalnie 1).
     """
     while True:
@@ -527,9 +519,9 @@ def ask_depth():
 
 
 def ask_who_starts():
-    """Prompt for who starts (1 = Human/X, 2 = AI/X).
+    """Pyta, kto zaczyna partię (1 = Człowiek/X, 2 = AI/X).
 
-    Returns:
+    Zwraca:
         int: 1 lub 2 (domyślnie 1).
     """
     while True:
@@ -568,4 +560,3 @@ if __name__ == "__main__":
         print("\nWygrała AI O (P2) – połączenie LEWO–PRAWO!")
     else:
         print("\nKoniec gry.")
-        
