@@ -10,6 +10,7 @@ from skfuzzy import control as ctrl
 import numpy as np
 from functools import lru_cache
 
+
 @lru_cache(maxsize=1)
 def setup_fuzzy_system():
     """
