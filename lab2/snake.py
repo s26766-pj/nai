@@ -15,7 +15,11 @@ Problem with Snake Eater: -
 - The snake must avoid colliding with walls.
 - The snake must collect red apples, the positions of which are randomly generated.
 - The snake must avoid colliding with its own body.
-- The biggest difficulty is that the snake grows one length each time it eats an apple, increasing the likelihood of colliding with itself. 
+- The biggest difficulty is that the snake grows one length each time it eats an apple, increasing the likelihood of colliding with itself.
+
+Run: pip install -r requirements.txt to install the dependencies
+Run: python snake.py to start the game
+
 """
 
 import pygame, sys, time, random
