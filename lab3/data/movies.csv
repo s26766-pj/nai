@@ -12,17 +12,17 @@
 11,Teoria wielkiego podrywu,comedy,series,us
 12,Braveheart,drama|history,movie,us
 13,The Expanse,drama|sci-fi,series,us
-14,Miasteczko South Park,dark|comedy|adult animation,series,us
+14,Miasteczko South Park,dark|comedy|adult|animation,series,us
 15,Kraina Lodu,animation|family|musical|adventure,movie,us
 16,Dziennik Bridget Jones,comedy|romance,movie,uk
 17,Kapitan Ameryka: Wojna bohaterów,action|sci-fi,movie,us
 18,Avengers: Czas Ultrona,action|sci-fi,movie,us
-19,Terminator 2,action|sci-fi|artificial inteligence,movie,us
+19,Terminator 2,action|sci-fi|ai,movie,us
 20,Planeta Singli,comedy|romance,movie,pl
 21,List do M.,comedy|romance,movie,pl
 22,List do M. 2,comedy|romance,movie,pl
 23,Forrest Gump,drama|comedy,movie,us
-24,Ex Machina,thriller|sci-fi|artificial inteligence,movie,uk
+24,Ex Machina,thriller|sci-fi|ai,movie,uk
 25,Gran Torino,drama,movie,us
 26,Cicha Noc,drama|comedy,movie,pl
 27,Battleship: Bitwa o Ziemię,sci-fi,movie,us
@@ -33,7 +33,7 @@
 32,John Wick,action|thriller,movie,us
 33,Narcos,biography|drama|crime,series,us
 34,Terminal,comedy|romance,movie,us
-35,Ona,sci-fi|drama|artificial inteligence,movie,us
+35,Ona,sci-fi|drama|ai,movie,us
 36,Whiplash,drama|musical,movie,us
 37,Diabeł ubiera się u Prady,drama|comedy,movie,us
 38,Dom z papieru,action|thriller,series,sp
@@ -93,12 +93,12 @@
 92,Joker: Folie à deux,drama|musical|thriller|psychological,movie,us
 93,Napoleon,action|adventure|biography,movie,uk
 94,Kobiety Mafii,action|drama,series,pl
-95,Bojack Horseman,adult animation|comedy|drama|psychological,series,us
+95,Bojack Horseman,adult|animation|comedy|drama|psychological,series,us
 96,The Sopranos,crime|drama|psychological,series,us
 97,The Office,comedy,series,us
 98,Dobre Miejsce,comedy|fantasy|mystery|romance,series,us
 99,Dzień świra,dark|comedy|drama|psychological,movie,pl
-100,Big Mouth,dark|comedy|adult animation|romance,series,us
+100,Big Mouth,dark|comedy|adult|animation|romance,series,us
 101,The Ranch,comedy,series,us
 102,Reniferek,comedy|drama|biography,series,uk
 103,TY,crime|drama|romance|thriller|psychological,series,us
@@ -118,13 +118,13 @@
 118,Sala samobójców. Hejter,drama|thriller,movie,pl
 119,Kod dostępu,action|crime|thriller|cyber,movie,us
 120,Incepcja,action|sci-fi|thriller|psychological,movie,us
-121,Matrix,action|sci-fi|artificial inteligence|cyber,movie,us
+121,Matrix,action|sci-fi|ai|cyber,movie,us
 122,Mroczna pieśń,drama|horror,movie,uk
 123,Milczenie owiec,crime|drama|thriller|psychological,movie,us
 124,Joker,crime|drama|thriller|psychological,movie,us
 125,Buntownik z wyboru,drama|romance|psychological,movie,us
 126,W pogoni za szczęściem,biography|drama,movie,us
-127,Interstellar,sci-fi|drama|artificial inteligence|psychological,movie,us
+127,Interstellar,sci-fi|drama|ai|psychological,movie,us
 128,Requiem dla snu,drama|psychological,movie,us
 129,W sieci zła,action|crime|drama|mistery|thriller,movie,us
 130,W objęciach węża,adventure|biography|drama,movie,sp
@@ -136,24 +136,24 @@
 136,Trener,biography|drama|sport,movie,us
 137,Uprowadzona,action|crime|thriller|psychological,movie,us
 138,K-Pax,drama|mystery|sci-fi|psychological,movie,us
-139,Chappie,action|crime|thriller|sci-fi|artificial inteligence,movie,us
-140,Ja Robot,action|sci-fi|thriller|artificial inteligence,movie,us
+139,Chappie,action|crime|thriller|sci-fi|ai,movie,us
+140,Ja Robot,action|sci-fi|thriller|ai,movie,us
 141,Dziewiąte wrota,mystery|thriller|psychological,movie,us
 142,Tożsamość Bourne'a,action|mystery|thriller|psychological,movie,us
 143,Jestem bogiem,sci-fi|thriller,movie,us
-144,Lucy,action|sci-fi|thriller|artificial inteligence,movie,us
+144,Lucy,action|sci-fi|thriller|ai,movie,us
 145,Truman show,comedy|drama|pschological,movie,us
 146,Miasto grzechu,crime|thriller,movie,us
 147,V jak Vendetta,superhero|action|sci-fi|thriller,movie,us
 148,Mechanik,drama|thriller|psychological,movie,us
 149,Plan doskonały,crime|drama|mistery|thriller,movie,us
 150,Rocky,drama|sport,movie,us
-151,Odyseja kosmiczna,sci-fi|adventure|psychological|artificial inteligence,movie,us
+151,Odyseja kosmiczna,sci-fi|adventure|psychological|ai,movie,us
 152,Wielki Mike,biography|drama|sport,movie,us
 153,Inni,mistery|thriller|psychological,movie,us
 154,W głowie się nie mieści,animation|family|comedy|psychological,movie,us
 155,Oppenheimer,biography|drama|history,movie,us
-156,Łowca androidów,action|drama|sci-fi|artificial inteligence,movie,us
+156,Łowca androidów,action|drama|sci-fi|ai,movie,us
 158,Killer tomatoes,dark|comedy|parody|sci-fi|horror,movie,us
 159,Toxic avenger,dark|comedy|action|horror|sci-fi,movie,us
 160,Iron sky,action|adventure|comedy|sci-fi,movie,fi
