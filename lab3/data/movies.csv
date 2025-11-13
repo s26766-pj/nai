@@ -1,285 +1,285 @@
 ﻿movieId,title,genres,type,production
-1,1670,satire | comedy | history,series,pl
-2,Jak sprzedawać dragi w sieci (szybko),comedy | crime | drama | romance,series,de
+1,1670,satire|comedy|history,series,pl
+2,Jak sprzedawać dragi w sieci (szybko),comedy|crime|drama|romance,series,de
 3,Samce Alfa,comedy,series,sp
-4,Lucyfer,fantasy | crime,series,us
-5,Niebieskooki Samuraj,drama | history | animation,series,us
-6,Barbarzyńcy,action | adventure | drama,series,de
-7,Para idealna,drama | crime,series,us
-8,Rojst,drama | crime,series,pl
-9,Polowanie na Czerwony Październik,action | thriller,movie,us
-10,Siedem,crime | thriller,movie,us
+4,Lucyfer,fantasy|crime,series,us
+5,Niebieskooki Samuraj,drama|history|animation,series,us
+6,Barbarzyńcy,action|adventure|drama,series,de
+7,Para idealna,drama|crime,series,us
+8,Rojst,drama|crime,series,pl
+9,Polowanie na Czerwony Październik,action|thriller,movie,us
+10,Siedem,crime|thriller,movie,us
 11,Teoria wielkiego podrywu,comedy,series,us
-12,Braveheart,drama | history,movie,us
-13,The Expanse,drama | sci-fi,series,us
-14,Miasteczko South Park,dark comedy | adult animation,series,us
-15,Kraina Lodu,animation | family | musical | adventure,movie,us
-16,Dziennik Bridget Jones,comedy | romance,movie,uk
-17,Kapitan Ameryka: Wojna bohaterów,action | sci-fi,movie,us
-18,Avengers: Czas Ultrona,action | sci-fi,movie,us
-19,Terminator 2,action | sci-fi | artificial inteligence,movie,us
-20,Planeta Singli,comedy | romance,movie,pl
-21,List do M.,comedy | romance,movie,pl
-22,List do M. 2,comedy | romance,movie,pl
-23,Forrest Gump,drama | comedy,movie,us
-24,Ex Machina,thriller | sci-fi | artificial inteligence,movie,uk
+12,Braveheart,drama|history,movie,us
+13,The Expanse,drama|sci-fi,series,us
+14,Miasteczko South Park,dark|comedy|adult animation,series,us
+15,Kraina Lodu,animation|family|musical|adventure,movie,us
+16,Dziennik Bridget Jones,comedy|romance,movie,uk
+17,Kapitan Ameryka: Wojna bohaterów,action|sci-fi,movie,us
+18,Avengers: Czas Ultrona,action|sci-fi,movie,us
+19,Terminator 2,action|sci-fi|artificial inteligence,movie,us
+20,Planeta Singli,comedy|romance,movie,pl
+21,List do M.,comedy|romance,movie,pl
+22,List do M. 2,comedy|romance,movie,pl
+23,Forrest Gump,drama|comedy,movie,us
+24,Ex Machina,thriller|sci-fi|artificial inteligence,movie,uk
 25,Gran Torino,drama,movie,us
-26,Cicha Noc,drama | comedy,movie,pl
+26,Cicha Noc,drama|comedy,movie,pl
 27,Battleship: Bitwa o Ziemię,sci-fi,movie,us
-28,Narodziny Gwiazdy,drama | musical,movie,us
-29,Kapitan Phillips,biography | drama,movie,us
-30,Grand Budapest Hotel,drama | comedy,movie,us
+28,Narodziny Gwiazdy,drama|musical,movie,us
+29,Kapitan Phillips,biography|drama,movie,us
+30,Grand Budapest Hotel,drama|comedy,movie,us
 31,Wyjazd integracyjny,comedy,movie,pl
-32,John Wick,action | thriller,movie,us
-33,Narcos,biography | drama | crime,series,us
-34,Terminal,comedy | romance,movie,us
-35,Ona,sci-fi | drama | artificial inteligence,movie,us
-36,Whiplash,drama | musical,movie,us
-37,Diabeł ubiera się u Prady,drama | comedy,movie,us
-38,Dom z papieru,action | thriller,series,sp
-39,Peaky Blinders,drama | history | crime,series,uk
+32,John Wick,action|thriller,movie,us
+33,Narcos,biography|drama|crime,series,us
+34,Terminal,comedy|romance,movie,us
+35,Ona,sci-fi|drama|artificial inteligence,movie,us
+36,Whiplash,drama|musical,movie,us
+37,Diabeł ubiera się u Prady,drama|comedy,movie,us
+38,Dom z papieru,action|thriller,series,sp
+39,Peaky Blinders,drama|history|crime,series,uk
 40,Contratiempo. Niewidzialny gość,crime,movie,sp
 41,La Cara Oculta,thriller,movie,sp
-42,Harry Potter i Insygnia Smierci cz. 2,family | fantasy | adventure,movie,us
-43,Avengers: Endgame,action | adventure | sci-fi,movie,us
-44,Więzień Labiryntu,action | mystery | sci-fi | thriller,movie,us
-45,911: Texas,action | drama | thriller,series,us
-46,911,action | drama | thriller,series,us
-47,Genialna Morgan,comedy | crime | drama | mystery,series,us
-48,Last Of Us,action | adventure | horror | drama | sci-fi,series,us
-49,Breslau,crime | drama | history,series,pl
-50,The Greatest Showman,biography | drama | musical,movie,us
-51,The Walking Dead,drama | horror | thriller | zombie,series,us
-52,Stranger Things,drama | fantasy,series,us
-53,Jak wytresować smoka?,action | adventure | comedy | drama | fantasy | family,movie,us
-54,Nasze Magiczne Encanto,animation | comedy | family | fantasy | musical,movie,us
-55,Vaiana,animation | adventure | comedy,movie,us
-56,Strażnicy Galaktyki,action | adventure | comedy | sci-fi,movie,us
-57,Diuna,action | adventure | drama,movie,us
-58,W lesie dziś nie zaśnie nikt,horror | fantasy | mystery,movie,pl
-59,Iron Man,superhero | action | adventure | sci-fi,movie,us
-60,Iron Man 2,superhero | action | adventure | sci-fi,movie,us
-61,Iron Man 3,superhero | action | adventure | sci-fi,movie,us
-62,Wakanda w moim sercu,superhero | action | adventure | sci-fi | drama,movie,us
-63,Coco,dark comedy | animation | family | adventure,movie,us
-64,Lista Schindlera,biography | drama | history,movie,us
-65,Pulp Fiction,dark comedy | crime | drama,movie,us
-66,Kontakt,drama | mystery | sci-fi | thriller,movie,us
-67,Lśnienie,drama | horror,movie,us
-68,The Room,dark comedy | drama,movie,us
-69,Dark,crime | drama | mistery | sci-fi,series,de
-70,Gwiezdne Wojny: Przebudzenie Mocy,action | adventure | sci-fi,movie,us
-71,Suma wszystkich strachów,action | drama | thriller,movie,us
-72,Rec 3: Geneza,action | zombie,movie,us
-73,Skazany na śmierć,action | crime | drama | mistery | thriller,series,us
-74,Dexter,crime | drama | mystery | thriller,series,us
-75,The Pitt,drama | medical,series,us
-76,Wieloryb,drama | psychological,movie,us
-77,Squid Game,action | drama | crime,series,as
-78,Adolescence,crime | drama | thriller,series,uk
-79,Czarne lustro,crime | drama | psychological,series,uk
-80,Orange is the new balck,comedy | crime | drama,series,us
-81,Pętla,action | crime | drama,movie,pl
-82,Zielona mila,crime | drama | fantasy | mystery,movie,us
-83,365 dni,drama | romance,movie,pl
+42,Harry Potter i Insygnia Smierci cz. 2,family|fantasy|adventure,movie,us
+43,Avengers: Endgame,action|adventure|sci-fi,movie,us
+44,Więzień Labiryntu,action|mystery|sci-fi|thriller,movie,us
+45,911: Texas,action|drama|thriller,series,us
+46,911,action|drama|thriller,series,us
+47,Genialna Morgan,comedy|crime|drama|mystery,series,us
+48,Last Of Us,action|adventure|horror|drama|sci-fi,series,us
+49,Breslau,crime|drama|history,series,pl
+50,The Greatest Showman,biography|drama|musical,movie,us
+51,The Walking Dead,drama|horror|thriller|zombie,series,us
+52,Stranger Things,drama|fantasy,series,us
+53,Jak wytresować smoka?,action|adventure|comedy|drama|fantasy|family,movie,us
+54,Nasze Magiczne Encanto,animation|comedy|family|fantasy|musical,movie,us
+55,Vaiana,animation|adventure|comedy,movie,us
+56,Strażnicy Galaktyki,action|adventure|comedy|sci-fi,movie,us
+57,Diuna,action|adventure|drama,movie,us
+58,W lesie dziś nie zaśnie nikt,horror|fantasy|mystery,movie,pl
+59,Iron Man,superhero|action|adventure|sci-fi,movie,us
+60,Iron Man 2,superhero|action|adventure|sci-fi,movie,us
+61,Iron Man 3,superhero|action|adventure|sci-fi,movie,us
+62,Wakanda w moim sercu,superhero|action|adventure|sci-fi|drama,movie,us
+63,Coco,dark|comedy|animation|family|adventure,movie,us
+64,Lista Schindlera,biography|drama|history,movie,us
+65,Pulp Fiction,dark|comedy|crime|drama,movie,us
+66,Kontakt,drama|mystery|sci-fi|thriller,movie,us
+67,Lśnienie,drama|horror,movie,us
+68,The Room,dark|comedy|drama,movie,us
+69,Dark,crime|drama|mistery|sci-fi,series,de
+70,Gwiezdne Wojny: Przebudzenie Mocy,action|adventure|sci-fi,movie,us
+71,Suma wszystkich strachów,action|drama|thriller,movie,us
+72,Rec 3: Geneza,action|zombie,movie,us
+73,Skazany na śmierć,action|crime|drama|mistery|thriller,series,us
+74,Dexter,crime|drama|mystery|thriller,series,us
+75,The Pitt,drama|medical,series,us
+76,Wieloryb,drama|psychological,movie,us
+77,Squid Game,action|drama|crime,series,as
+78,Adolescence,crime|drama|thriller,series,uk
+79,Czarne lustro,crime|drama|psychological,series,uk
+80,Orange is the new balck,comedy|crime|drama,series,us
+81,Pętla,action|crime|drama,movie,pl
+82,Zielona mila,crime|drama|fantasy|mystery,movie,us
+83,365 dni,drama|romance,movie,pl
 84,Boże Ciało,drama,movie,pl
-85,Saltrburn,dark comedy | drama | thriller | psychological,movie,uk
-86,Twierdza,action | adventure | thriller,movie,us
-87,twój vincent,animation | drama | mistery,movie,pl
-88,Platforma 2,horror | sci-fi | thriller,movie,sp
-89,Podziemny krąg,drama | crime | thriller | psychological,movie,us
-90,blade runner 2049,action | drama | mystery | cyber,movie,us
-91,Pingwin,crime | drama,series,us
-92,Joker: Folie à deux,drama | musical | thriller | psychological,movie,us
-93,Napoleon,action | adventure | biography,movie,uk
-94,Kobiety Mafii,action | drama,series,pl
-95,Bojack Horseman,adult animation | comedy | drama | psychological,series,us
-96,The Sopranos,crime | drama | psychological,series,us
+85,Saltrburn,dark|comedy|drama|thriller|psychological,movie,uk
+86,Twierdza,action|adventure|thriller,movie,us
+87,twój vincent,animation|drama|mistery,movie,pl
+88,Platforma 2,horror|sci-fi|thriller,movie,sp
+89,Podziemny krąg,drama|crime|thriller|psychological,movie,us
+90,blade runner 2049,action|drama|mystery|cyber,movie,us
+91,Pingwin,crime|drama,series,us
+92,Joker: Folie à deux,drama|musical|thriller|psychological,movie,us
+93,Napoleon,action|adventure|biography,movie,uk
+94,Kobiety Mafii,action|drama,series,pl
+95,Bojack Horseman,adult animation|comedy|drama|psychological,series,us
+96,The Sopranos,crime|drama|psychological,series,us
 97,The Office,comedy,series,us
-98,Dobre Miejsce,comedy | fantasy | mystery | romance,series,us
-99,Dzień świra,dark comedy | drama | psychological,movie,pl
-100,Big Mouth,dark comedy | adult animation | romance,series,us
+98,Dobre Miejsce,comedy|fantasy|mystery|romance,series,us
+99,Dzień świra,dark|comedy|drama|psychological,movie,pl
+100,Big Mouth,dark|comedy|adult animation|romance,series,us
 101,The Ranch,comedy,series,us
-102,Reniferek,comedy | drama | biography,series,uk
-103,TY,crime | drama | romance | thriller | psychological,series,us
+102,Reniferek,comedy|drama|biography,series,uk
+103,TY,crime|drama|romance|thriller|psychological,series,us
 104,Kim jest Anna,drama,series,us
-105,50 Twarzy Greya,drama | romance | thriller | psychological,movie,us
-106,Zaginiona dziewczyna,drama | mystery | thriller,movie,us
-107,Insatiable,dark comedy | drama | thriller,series,us
-108,Norsemen,comedy | history,series,no
+105,50 Twarzy Greya,drama|romance|thriller|psychological,movie,us
+106,Zaginiona dziewczyna,drama|mystery|thriller,movie,us
+107,Insatiable,dark|comedy|drama|thriller,series,us
+108,Norsemen,comedy|history,series,no
 109,Skazani na Shawshank,drama,movie,us
-110,Lot nad kukułczym gniazdem,dark comedy | drama | psychological,movie,us
-111,Pi,drama | mystery | psychological,movie,us
-112,Eagle Eye,action | thriller | cyber,movie,us
-113,Źródło,drama | mystery | romance | sci-fi,movie,us
-114,Święta góra,fantasy | adventure | drama,movie,us
-115,Klucz do koszmaru,drama | horror | mystery | thriller | psychological,movie,us
+110,Lot nad kukułczym gniazdem,dark|comedy|drama|psychological,movie,us
+111,Pi,drama|mystery|psychological,movie,us
+112,Eagle Eye,action|thriller|cyber,movie,us
+113,Źródło,drama|mystery|romance|sci-fi,movie,us
+114,Święta góra,fantasy|adventure|drama,movie,us
+115,Klucz do koszmaru,drama|horror|mystery|thriller|psychological,movie,us
 116,Przesmyk,drama,series,pl
-118,Sala samobójców. Hejter,drama | thriller,movie,pl
-119,Kod dostępu,action | crime | thriller | cyber,movie,us
-120,Incepcja,action | sci-fi | thriller | psychological,movie,us
-121,Matrix,action | sci-fi | artificial inteligence | cyber,movie,us
-122,Mroczna pieśń,drama | horror,movie,uk
-123,Milczenie owiec,crime | drama | thriller | psychological,movie,us
-124,Joker,crime | drama | thriller | psychological,movie,us
-125,Buntownik z wyboru,drama | romance | psychological,movie,us
-126,W pogoni za szczęściem,biography | drama,movie,us
-127,Interstellar,sci-fi | drama | artificial inteligence | psychological,movie,us
-128,Requiem dla snu,drama | psychological,movie,us
-129,W sieci zła,action | crime | drama | mistery | thriller,movie,us
-130,W objęciach węża,adventure | biography | drama,movie,sp
-131,Gra,drama | mystery | thriller | psychological,movie,us
-132,Seksmisja,adventure | comedy | sci-fi,movie,pl
-133,Efekt motyla,drama | thriller | psychological,movie,us
-134,Morderstwa w Oxford,crime | mystery | thriller,movie,uk
-135,Symetria,drama | thriller,movie,pl
-136,Trener,biography | drama | sport,movie,us
-137,Uprowadzona,action | crime | thriller | psychological,movie,us
-138,K-Pax,drama | mystery | sci-fi | psychological,movie,us
-139,Chappie,action | crime | thriller | sci-fi | artificial inteligence,movie,us
-140,Ja Robot,action | sci-fi | thriller | artificial inteligence,movie,us
-141,Dziewiąte wrota,mystery | thriller | psychological,movie,us
-142,Tożsamość Bourne'a,action | mystery | thriller | psychological,movie,us
-143,Jestem bogiem,sci-fi | thriller,movie,us
-144,Lucy,action | sci-fi | thriller | artificial inteligence,movie,us
-145,Truman show,comedy | drama | pschological,movie,us
-146,Miasto grzechu,crime | thriller,movie,us
-147,V jak Vendetta,superhero | action | sci-fi | thriller,movie,us
-148,Mechanik,drama | thriller | psychological,movie,us
-149,Plan doskonały,crime | drama | mistery | thriller,movie,us
-150,Rocky,drama | sport,movie,us
-151,Odyseja kosmiczna,sci-fi | adventure | psychological | artificial inteligence,movie,us
-152,Wielki Mike,biography | drama | sport,movie,us
-153,Inni,mistery | thriller | psychological,movie,us
-154,W głowie się nie mieści,animation | family | comedy | psychological,movie,us
-155,Oppenheimer,biography | drama | history,movie,us
-156,Łowca androidów,action | drama | sci-fi | artificial inteligence,movie,us
-158,Killer tomatoes,dark comedy | parody | sci-fi | horror,movie,us
-159,Toxic avenger,dark comedy | action | horror | sci-fi,movie,us
-160,Iron sky,action | adventure | comedy | sci-fi,movie,fi
-161,Sky Sharks,comedy | horror | sci-fi,movie,de
-162,Lexx,dark comedy | action | sci-fi | drama | fantasy,movie,cn
-163,Nuke'em high,parody | comedy | horror | sci-fi,movie,us
-164,Yeti a gay love story,comedy | horror | romance,movie,us
-165,Zemsta Embriona,drama | fantasy | horror | sci-fy,movie,us
-166,Truma's war,parody | comedy | horror | adventure,movie,us
-167,Substancja,drama | horror | sci-fi | pschological,movie,us
-168,Rodzaje Życzliwości,dark comedy | drama | horror,movie,us
-169,Biedne Istoty,dark comedy | drama | sci-fi | psychological,movie,us
-170,Rebel Moon,sci-fi | action | adventure | drama,movie,us
-172,Barbie,comedy | fantasy,movie,us
-173,Communion,biography | drama | horror | sci-fi | thriller,movie,us
-174,Swiss Army Man,dark comedy | drama | fantasy | romance,movie,us
-175,Wszystko wszędzie naraz,action | adventure | dark comedy | sci-fi,movie,us
-176,The new Barbarians,action | sci-fi | thriller,movie,it
+118,Sala samobójców. Hejter,drama|thriller,movie,pl
+119,Kod dostępu,action|crime|thriller|cyber,movie,us
+120,Incepcja,action|sci-fi|thriller|psychological,movie,us
+121,Matrix,action|sci-fi|artificial inteligence|cyber,movie,us
+122,Mroczna pieśń,drama|horror,movie,uk
+123,Milczenie owiec,crime|drama|thriller|psychological,movie,us
+124,Joker,crime|drama|thriller|psychological,movie,us
+125,Buntownik z wyboru,drama|romance|psychological,movie,us
+126,W pogoni za szczęściem,biography|drama,movie,us
+127,Interstellar,sci-fi|drama|artificial inteligence|psychological,movie,us
+128,Requiem dla snu,drama|psychological,movie,us
+129,W sieci zła,action|crime|drama|mistery|thriller,movie,us
+130,W objęciach węża,adventure|biography|drama,movie,sp
+131,Gra,drama|mystery|thriller|psychological,movie,us
+132,Seksmisja,adventure|comedy|sci-fi,movie,pl
+133,Efekt motyla,drama|thriller|psychological,movie,us
+134,Morderstwa w Oxford,crime|mystery|thriller,movie,uk
+135,Symetria,drama|thriller,movie,pl
+136,Trener,biography|drama|sport,movie,us
+137,Uprowadzona,action|crime|thriller|psychological,movie,us
+138,K-Pax,drama|mystery|sci-fi|psychological,movie,us
+139,Chappie,action|crime|thriller|sci-fi|artificial inteligence,movie,us
+140,Ja Robot,action|sci-fi|thriller|artificial inteligence,movie,us
+141,Dziewiąte wrota,mystery|thriller|psychological,movie,us
+142,Tożsamość Bourne'a,action|mystery|thriller|psychological,movie,us
+143,Jestem bogiem,sci-fi|thriller,movie,us
+144,Lucy,action|sci-fi|thriller|artificial inteligence,movie,us
+145,Truman show,comedy|drama|pschological,movie,us
+146,Miasto grzechu,crime|thriller,movie,us
+147,V jak Vendetta,superhero|action|sci-fi|thriller,movie,us
+148,Mechanik,drama|thriller|psychological,movie,us
+149,Plan doskonały,crime|drama|mistery|thriller,movie,us
+150,Rocky,drama|sport,movie,us
+151,Odyseja kosmiczna,sci-fi|adventure|psychological|artificial inteligence,movie,us
+152,Wielki Mike,biography|drama|sport,movie,us
+153,Inni,mistery|thriller|psychological,movie,us
+154,W głowie się nie mieści,animation|family|comedy|psychological,movie,us
+155,Oppenheimer,biography|drama|history,movie,us
+156,Łowca androidów,action|drama|sci-fi|artificial inteligence,movie,us
+158,Killer tomatoes,dark|comedy|parody|sci-fi|horror,movie,us
+159,Toxic avenger,dark|comedy|action|horror|sci-fi,movie,us
+160,Iron sky,action|adventure|comedy|sci-fi,movie,fi
+161,Sky Sharks,comedy|horror|sci-fi,movie,de
+162,Lexx,dark|comedy|action|sci-fi|drama|fantasy,movie,cn
+163,Nuke'em high,parody|comedy|horror|sci-fi,movie,us
+164,Yeti a gay love story,comedy|horror|romance,movie,us
+165,Zemsta Embriona,drama|fantasy|horror|sci-fy,movie,us
+166,Truma's war,parody|comedy|horror|adventure,movie,us
+167,Substancja,drama|horror|sci-fi|pschological,movie,us
+168,Rodzaje Życzliwości,dark|comedy|drama|horror,movie,us
+169,Biedne Istoty,dark|comedy|drama|sci-fi|psychological,movie,us
+170,Rebel Moon,sci-fi|action|adventure|drama,movie,us
+172,Barbie,comedy|fantasy,movie,us
+173,Communion,biography|drama|horror|sci-fi|thriller,movie,us
+174,Swiss Army Man,dark|comedy|drama|fantasy|romance,movie,us
+175,Wszystko wszędzie naraz,action|adventure|dark|comedy|sci-fi,movie,us
+176,The new Barbarians,action|sci-fi|thriller,movie,it
 177,The Demonicas,horror,movie,fr
-178,Wszyscy Moi przyjaciele nie żyją,comedy | crime | horror,movie,pl
-179,JOJO Rabit,dark comedy | parody | drama,movie,cz
-180,Men & Chicken,dark comedy | mistery | sci-fi | drama,movie,dk
-181,Pewnego razu w hollywood,comedy | drama,movie,us
+178,Wszyscy Moi przyjaciele nie żyją,comedy|crime|horror,movie,pl
+179,JOJO Rabit,dark|comedy|parody|drama,movie,cz
+180,Men & Chicken,dark|comedy|mistery|sci-fi|drama,movie,dk
+181,Pewnego razu w hollywood,comedy|drama,movie,us
 182,Wielkie Piękno,drama,movie,it
-183,Parasite,dark comedy | drama | thriller | psychological,movie,as
-184,Kto pilnuje Oliwera,drama | horror,movie,us
-185,Zwierzęta,comedy | drama,movie,uk
-186,Spiskowcy Rozkoszy,dark comedy | drama,movie,cz
-187,Mały Otik,thriller | horror | psychological,movie,cz
-188,Plan 9 z kosmosu,sci-fi | zombie,movie,us
+183,Parasite,dark|comedy|drama|thriller|psychological,movie,as
+184,Kto pilnuje Oliwera,drama|horror,movie,us
+185,Zwierzęta,comedy|drama,movie,uk
+186,Spiskowcy Rozkoszy,dark|comedy|drama,movie,cz
+187,Mały Otik,thriller|horror|psychological,movie,cz
+188,Plan 9 z kosmosu,sci-fi|zombie,movie,us
 189,Niemiłość,drama,movie,ru
-190,Lovewitch,dark comedy | horror | romance | thriller,movie,us
-191,Kingsman,action | adventure | comedy | thriller,movie,us
-192,Nowy Początek,drama | mystery | sci-fi | psychological,movie,us
-193,Krwawa Uczta,action | comedy | horror | sci-fi | thriller,movie,us
-194,The killing of satan,action | adventure | fantasy | horror,movie,fo
-195,Big Short,biography | comedy | drama | history,movie,us
-196,Lobster,dark comedy | drama | romance | sci-fi | thrilller,movie,us
-197,Kawa i Papierosy,comedy | drama,movie,us
-198,Fargo,dark comedy | crime | drama | thriller,movie,us
-199,Sicario,action | crime | drama | mistery | thriller,movie,us
-200,Birdman,dark comedy | drama,movie,us
-201,Lewiatan,dark comedy | crime | drama,movie,ru
-202,Paprika,animation | drama | thriller | psychological,movie,jp
-203,Martwe zło,dark comedy | horror,movie,us
-204,Przełęcz ocalonych,biography | drama | history,movie,us
-205,Gra o Tron,action | adventrue | psychological,series,us
-206,Suits,comedy | drama,series,us
-207,Nietykalni,comedy | drama,movie,fr
+190,Lovewitch,dark|comedy|horror|romance|thriller,movie,us
+191,Kingsman,action|adventure|comedy|thriller,movie,us
+192,Nowy Początek,drama|mystery|sci-fi|psychological,movie,us
+193,Krwawa Uczta,action|comedy|horror|sci-fi|thriller,movie,us
+194,The killing of satan,action|adventure|fantasy|horror,movie,fo
+195,Big Short,biography|comedy|drama|history,movie,us
+196,Lobster,dark|comedy|drama|romance|sci-fi|thrilller,movie,us
+197,Kawa i Papierosy,comedy|drama,movie,us
+198,Fargo,dark|comedy|crime|drama|thriller,movie,us
+199,Sicario,action|crime|drama|mistery|thriller,movie,us
+200,Birdman,dark|comedy|drama,movie,us
+201,Lewiatan,dark|comedy|crime|drama,movie,ru
+202,Paprika,animation|drama|thriller|psychological,movie,jp
+203,Martwe zło,dark|comedy|horror,movie,us
+204,Przełęcz ocalonych,biography|drama|history,movie,us
+205,Gra o Tron,action|adventrue|psychological,series,us
+206,Suits,comedy|drama,series,us
+207,Nietykalni,comedy|drama,movie,fr
 208,Bad boy,drama,series,is
 209,Kac Wawa,comedy,movie,pl
-210,Shrek,animation | dark comedy,movie,us
+210,Shrek,animation|dark|comedy,movie,us
 211,Kac Vegas,comedy,movie,us
-212,Straszny film,dark comedy | parody,movie,us
-213,Dr. House,dark comedy | drama,series,us
-214,Batman,superhero | action | crime,movie,us
-215,Breaking Bad,dark comedy | drama | thriller | psychological,series,us
-216,Farciarz Gilmore,comedy | sport,movie,us
-217,Super tata,comedy | drama,movie,us
+212,Straszny film,dark|comedy|parody,movie,us
+213,Dr. House,dark|comedy|drama,series,us
+214,Batman,superhero|action|crime,movie,us
+215,Breaking Bad,dark|comedy|drama|thriller|psychological,series,us
+216,Farciarz Gilmore,comedy|sport,movie,us
+217,Super tata,comedy|drama,movie,us
 218,Ted,comedy,movie,us
-219,Żona na niby,comedy | romance,movie,us
-220,Marley i ja,drama | family,movie,us
-221,Bruce Wszechmogący,comedy | fantasy,movie,us
-222,Millerowie,dark comedy | crime,movie,us
-223,Furia,action | drama,movie,us
-224,Star Wars,action | fantasy | sci-fi,movie,us
-225,Spider man,superhero | action | adventure | sci-fi,movie,us
-226,Pszczelarz,action | crime | thriller,movie,us
-227,Ruchomy chaos,action | adventure | drama | fantasy | sci-fi,movie,us
-228,Na noże,comedy | crime | drama | mystery | thriller,movie,us
-229,Skrytka,crime | drama | mystery | thriller,movie,us
-231,Glass,drama | thriller | sci-fi | pschological,movie,us
-232,Odkrycie,drama | romance | sci-fi | psychological,movie,us
-233,Zostaw świat za sobą,drama | mystery | thriller,movie,us
-234,Old,drama | mystery | thriller | psychological,movie,us
-235,Cloverfield Lane 10,drama | horror | sci-fi | pschological,movie,us
-236,Recepta na przekręt,crime | drama,movie,us
-237,Bielmo,crime | mystery | thriller,movie,us
-238,Synchronic,drama | mystery | thriller | psychological,movie,us
-239,Paradise,action | sci-fi | thriller | cyber,movie,de
-240,Circle,drama | mystery | sci-fi | thriller | cyber,movie,us
-241,Nie patrz w górę,dark comedy | drama | sci-fi,movie,us
-242,John Wick 4,action | crime | thriller,movie,us
-243,Platforma,mistery | sci-fi | thriller,movie,sp
-244,Linia życia,drama | mystery | sci-fi | thriller | psychological,movie,us
-245,Pierwszy śnieg,crime | mystery | thriller | psychological,movie,us
-247,Game Over Man,dark comedy | parody | action,movie,us
-248,Tenet,action | sci-fi | thriller,movie,us
+219,Żona na niby,comedy|romance,movie,us
+220,Marley i ja,drama|family,movie,us
+221,Bruce Wszechmogący,comedy|fantasy,movie,us
+222,Millerowie,dark|comedy|crime,movie,us
+223,Furia,action|drama,movie,us
+224,Star Wars,action|fantasy|sci-fi,movie,us
+225,Spider man,superhero|action|adventure|sci-fi,movie,us
+226,Pszczelarz,action|crime|thriller,movie,us
+227,Ruchomy chaos,action|adventure|drama|fantasy|sci-fi,movie,us
+228,Na noże,comedy|crime|drama|mystery|thriller,movie,us
+229,Skrytka,crime|drama|mystery|thriller,movie,us
+231,Glass,drama|thriller|sci-fi|pschological,movie,us
+232,Odkrycie,drama|romance|sci-fi|psychological,movie,us
+233,Zostaw świat za sobą,drama|mystery|thriller,movie,us
+234,Old,drama|mystery|thriller|psychological,movie,us
+235,Cloverfield Lane 10,drama|horror|sci-fi|pschological,movie,us
+236,Recepta na przekręt,crime|drama,movie,us
+237,Bielmo,crime|mystery|thriller,movie,us
+238,Synchronic,drama|mystery|thriller|psychological,movie,us
+239,Paradise,action|sci-fi|thriller|cyber,movie,de
+240,Circle,drama|mystery|sci-fi|thriller|cyber,movie,us
+241,Nie patrz w górę,dark|comedy|drama|sci-fi,movie,us
+242,John Wick 4,action|crime|thriller,movie,us
+243,Platforma,mistery|sci-fi|thriller,movie,sp
+244,Linia życia,drama|mystery|sci-fi|thriller|psychological,movie,us
+245,Pierwszy śnieg,crime|mystery|thriller|psychological,movie,us
+247,Game Over Man,dark|comedy|parody|action,movie,us
+248,Tenet,action|sci-fi|thriller,movie,us
 249,Zenek,biography,movie,pl
-250,Gold,crime | drama | history,movie,uk
-251,Player One,adventure | action | sci-fi,movie,us
+250,Gold,crime|drama|history,movie,uk
+251,Player One,adventure|action|sci-fi,movie,us
 252,Kler,drama,movie,pl
-253,Irlandczyk,biography | crime | drama | history | thriller,movie,us
-254,Snowden,biography | crime | drama | thriller,movie,us
-255,Dawca pamięci,drama | romance | sci-fi | thriller,movie,ca
-256,Mroczna wieża,action | adventure | drama | fantasy | sci-fi,movie,us
-257,Pasażerowie,drama | romance | sci-fi | thriller,movie,us
-258,McImperium,biography | drama,movie,us
-259,Gwiezdne wojny: część III – Zemsta Sithów,fantasy | sci-fi,movie,us
-260,Straight Outta Compton,biography | drama | history,movie,us
-261,Nosferatu,fantasy | horror | mystery,movie,us
-262,The Witcher,action | adventure | drama,movie,pl
-263,Wikingowie,action | adventure | drama | history | romance,series,ir
-264,Avengers,superhero | action | sci-fi,movie,us
-265,Superbarbies,comedy | family | sci-fi,movie,de
-266,Manos,parody | comedy | horror,movie,us
-267,Cats,comedy | drama | family | fantasy | musical,movie,uk
-268,No Orchids for Miss Blandish,crime | drama | thriller,movie,uk
-269,Lupin,action | crime | drama | mistery,movie,fr
-270,The Walking Dead,drama | horror | thriller | zombie,series,us
-271,Powrót do przyszłości,adventure | comedy | sci-fi,movie,us
-272,Nigdzie,drama | thriller,movie,sp
-273,Siła ducha,biography | drama | family | sport,movie,au
-274,Dublerzy,action | comedy,movie,pl
-275,Jak rozpętałem drugą wojnę światową,adventure | comedy,movie,pl
-276,Titanic,drama | romance,movie,us
-277,Avatar,action | adventure | fantasy | sci-fi,movie,us
-278,Szybcy i wściekli,action | crime | thriller,movie,us
-279,Vinci,comedy | crime,movie,pl
-280,Dlaczego nie,comedy | romance,movie,pl
-282,Mad Max: na drodze gniewu,action | adventure,movie,us
+253,Irlandczyk,biography|crime|drama|history|thriller,movie,us
+254,Snowden,biography|crime|drama|thriller,movie,us
+255,Dawca pamięci,drama|romance|sci-fi|thriller,movie,ca
+256,Mroczna wieża,action|adventure|drama|fantasy|sci-fi,movie,us
+257,Pasażerowie,drama|romance|sci-fi|thriller,movie,us
+258,McImperium,biography|drama,movie,us
+259,Gwiezdne wojny: część III – Zemsta Sithów,fantasy|sci-fi,movie,us
+260,Straight Outta Compton,biography|drama|history,movie,us
+261,Nosferatu,fantasy|horror|mystery,movie,us
+262,The Witcher,action|adventure|drama,movie,pl
+263,Wikingowie,action|adventure|drama|history|romance,series,ir
+264,Avengers,superhero|action|sci-fi,movie,us
+265,Superbarbies,comedy|family|sci-fi,movie,de
+266,Manos,parody|comedy|horror,movie,us
+267,Cats,comedy|drama|family|fantasy|musical,movie,uk
+268,No Orchids for Miss Blandish,crime|drama|thriller,movie,uk
+269,Lupin,action|crime|drama|mistery,movie,fr
+270,The Walking Dead,drama|horror|thriller|zombie,series,us
+271,Powrót do przyszłości,adventure|comedy|sci-fi,movie,us
+272,Nigdzie,drama|thriller,movie,sp
+273,Siła ducha,biography|drama|family|sport,movie,au
+274,Dublerzy,action|comedy,movie,pl
+275,Jak rozpętałem drugą wojnę światową,adventure|comedy,movie,pl
+276,Titanic,drama|romance,movie,us
+277,Avatar,action|adventure|fantasy|sci-fi,movie,us
+278,Szybcy i wściekli,action|crime|thriller,movie,us
+279,Vinci,comedy|crime,movie,pl
+280,Dlaczego nie,comedy|romance,movie,pl
+282,Mad Max: na drodze gniewu,action|adventure,movie,us
 283,Wesele,drama,movie,pl
-284,Tomb Raider,action | adventure | fantasy,movie,us
-285,Pearl Harbor,action | drama | romance,movie,us
-286,Garfield,adventure | comedy | family | fantasy,movie,us
-287,Gdzie jest Nemo?,animation | adventure | comedy | family,movie,us
-288,"Gulczas, a jak myślisz?",comedy | crime,movie,pl
-289,Kilerów dwóch,comedy | crime,movie,pl
-290,Chłopaki nie płaczą,comedy | crime,movie,pl
+284,Tomb Raider,action|adventure|fantasy,movie,us
+285,Pearl Harbor,action|drama|romance,movie,us
+286,Garfield,adventure|comedy|family|fantasy,movie,us
+287,Gdzie jest Nemo?,animation|adventure|comedy|family,movie,us
+288,"Gulczas, a jak myślisz?",comedy|crime,movie,pl
+289,Kilerów dwóch,comedy|crime,movie,pl
+290,Chłopaki nie płaczą,comedy|crime,movie,pl
