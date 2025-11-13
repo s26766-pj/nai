@@ -1,4 +1,7 @@
 """
+Run: pip install -r requirements.txt to install the dependencies
+Run: python snake.py to start the game
+
 Fuzzy Logic System for Snake Game AI
 Authors: Kamil Suchomski, Kamil Koniak
 
