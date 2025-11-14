@@ -1,4 +1,4 @@
-# Movie Recommendation System - Lab 3
+# Movie and Series Recommendation System - Lab 3 - NAI
 
 A graphical user interface application for exploring personalized movie recommendations using Item-based Collaborative Filtering with Cosine Similarity.
 
