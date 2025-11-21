@@ -236,7 +236,7 @@ class RecommendationGUI:
             f"{user_id:02d} – {self.user_lookup.get(user_id, f'User {user_id}')}"
             for user_id in sorted(self.user_lookup.keys())
         ]
-
+        
         # User selection dropdown (combobox)
         self.user_combo = ttk.Combobox(
             top_frame,
@@ -251,6 +251,27 @@ class RecommendationGUI:
         # Select first user by default if users exist
         if user_display_names:
             self.user_combo.current(0)
+            
+        # Status info next to user selection (top-right)
+        self.status_var = tk.StringVar(
+            value=(
+                f"Model trained on {len(self.ratings)} ratings. "
+                f"RMSE={self.metrics['rmse']:.2f}  MAE={self.metrics['mae']:.2f}"
+                if not pd.isna(self.metrics["rmse"])
+                else "Model trained on full dataset."
+            )
+        )
+        
+        status_label = ttk.Label(
+            top_frame,
+            textvariable=self.status_var,
+            anchor="e",
+            padding=5,
+            font=self.font_small,
+        )
+        
+        # pack to the RIGHT → near combobox
+        status_label.pack(side="right")
 
         # User info display: shows selected user's name, rating count, and average rating
         self.user_info_var = tk.StringVar(value="Select a user to view recommendations.")
@@ -260,6 +281,8 @@ class RecommendationGUI:
             font=self.font_body,
             padding=10,
         ).pack(fill="x")  # Fill entire width
+        
+
 
         # Main content area: split into left (recommendations) and right (IMDb details)
         tables_frame = ttk.Frame(self.root, padding=10)
@@ -327,22 +350,6 @@ class RecommendationGUI:
         self.imdb_desc.insert("1.0", "IMDb details will appear here.")
         self.imdb_desc.configure(state="disabled")  # Read-only
 
-        # Status bar: displays model training information and metrics
-        self.status_var = tk.StringVar(
-            value=f"Model trained on {len(self.ratings)} ratings. RMSE={self.metrics['rmse']:.2f}  MAE={self.metrics['mae']:.2f}"
-            if not pd.isna(self.metrics["rmse"])
-            else "Model trained on full dataset."
-        )
-        status_label = ttk.Label(
-            self.root,
-            textvariable=self.status_var,
-            relief="sunken",  # Sunken border for status bar appearance
-            anchor="w",  # Left-align text
-            padding=5,
-            font=self.font_small,
-        )
-        status_label.pack(fill="x", side="bottom")  # Place at bottom, fill width
-
         # Display initial user data if a user is selected by default
         if self.user_combo.get():
             self.display_selected_user_data()
@@ -353,8 +360,8 @@ class RecommendationGUI:
         """
         Create a Treeview widget for displaying movie recommendations.
         
-        Creates a labeled frame containing a table with two columns (Title and Predicted Score)
-        and a vertical scrollbar. Used for both "Likely to Enjoy" and "Likely to Skip" tables.
+        Creates a labeled frame containing a table with two columns (Title and Predicted Score).
+        Used for both "Likely to Enjoy" and "Likely to Skip" tables.
         
         Args:
             parent: Parent frame to contain the treeview
@@ -384,9 +391,9 @@ class RecommendationGUI:
         tree.pack(fill="both", expand=True)
 
         # Add vertical scrollbar
-        scrollbar = ttk.Scrollbar(frame, orient="vertical", command=tree.yview)
-        tree.configure(yscroll=scrollbar.set)  # Link scrollbar to treeview
-        scrollbar.pack(side="right", fill="y")
+        #scrollbar = ttk.Scrollbar(frame, orient="vertical", command=tree.yview)
+        #tree.configure(yscroll=scrollbar.set)  # Link scrollbar to treeview
+        #scrollbar.pack(side="right", fill="y")
 
         return tree
 
@@ -776,4 +783,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
