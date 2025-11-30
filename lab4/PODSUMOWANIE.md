@@ -28,17 +28,17 @@ Oceniono:
 # 2. Eksploracja danych (EDA)
 
 ## Banknote Authentication
-![](report\Banknote_Authentication_data_overview.png)
+![](report/Banknote_Authentication_data_overview.png)
 
 ## Pima Indians Diabetes
-![](report\Pima_Indians_Diabetes_data_overview.png)
+![](report/Pima_Indians_Diabetes_data_overview.png)
 
 ---
 
 # 3. Drzewa decyzyjne – analiza wyników
 
 ## Banknote Authentication – Decision Tree
-![](report\Banknote_Authentication_analysis.png)
+![](report/Banknote_Authentication_analysis.png)
 
 **Najważniejsze wyniki:**
 - Entropy: accuracy ≈ **0.9927**
@@ -52,7 +52,7 @@ Zbiór jest łatwy – oba kryteria dają wyniki bliskie 100%.
 ---
 
 ## Pima Indians Diabetes – Decision Tree
-![](report\Pima_Indians_Diabetes_analysis.png)
+![](report/Pima_Indians_Diabetes_analysis.png)
 
 **Najważniejsze wyniki:**
 - Entropy: accuracy ≈ **0.7316**
