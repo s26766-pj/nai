@@ -68,28 +68,28 @@ GINI wypada wyraźnie lepiej niż Entropy. Kontrola głębokości jest konieczna
 # 4. Support Vector Machine – analiza wyników
 
 ## Banknote Authentication – SVM
-![](report\Banknote_Authentication_SVM_analysis.png)
+![](report/Banknote_Authentication_SVM_analysis.png)
 
 ## Pima Indians Diabetes – SVM
-![](report\Pima_Indians_Diabetes_SVM_analysis.png)
+![](report/Pima_Indians_Diabetes_SVM_analysis.png)
 
 ---
 
 # 5. Wizualizacje granic decyzyjnych
 
 ## Banknote Authentication – RBF 2D
-![](report\Banknote_Authentication_SVM_decision_boundary_rbf.png)
+![](report/Banknote_Authentication_SVM_decision_boundary_rbf.png)
 
 ## Banknote Authentication – RBF 3D
-![](report\Banknote_Authentication_SVM_decision_boundary_3d_rbf.png)
+![](report/Banknote_Authentication_SVM_decision_boundary_3d_rbf.png)
 
 ---
 
 ## Pima Indians Diabetes – RBF 2D
-![](report\Pima_Indians_Diabetes_SVM_decision_boundary_rbf.png)
+![](report/Pima_Indians_Diabetes_SVM_decision_boundary_rbf.png)
 
 ## Pima Indians Diabetes – RBF 3D
-![](report\Pima_Indians_Diabetes_SVM_decision_boundary_3d_rbf.png)
+![](report/Pima_Indians_Diabetes_SVM_decision_boundary_3d_rbf.png)
 
 ---
 
