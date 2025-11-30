@@ -82,9 +82,16 @@ All files are saved in the `report/` folder:
 - `{dataset}_SVM_Kernel_Summary.txt` - Detailed kernel analysis summary
 
 ### Documentation
-- `SVM_Kernel_Functions_Summary.md` - Comprehensive guide on kernel functions
+- `KERNEL_FUNCTIONS_SUMMARY.md` - Summary of how kernel functions affect classification results
+- `report/SVM_Kernel_Functions_Summary.md` - Comprehensive guide on kernel functions
 
 ## Kernel Functions Summary
+
+See `KERNEL_FUNCTIONS_SUMMARY.md` in the repository root for a concise summary of:
+- How different kernel functions affect classification results
+- Parameter effects on model performance
+- Experimental findings from both datasets
+- Recommendations for kernel and parameter selection
 
 See `report/SVM_Kernel_Functions_Summary.md` for detailed information about:
 - How each kernel function works
