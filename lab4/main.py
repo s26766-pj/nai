@@ -1,6 +1,16 @@
 """
-Main Entry Point: Decision Tree Analysis
-Orchestrates the complete analysis pipeline for both datasets
+Authors: Kamil Suchomski, Kamil Koniak
+
+PROBLEM:
+Decision Tree and SVM Analysis for two datasets: Banknote Authentication and Pima Indians Diabetes
+
+SOLUTION:
+This script performs comprehensive machine learning analysis on two datasets:
+1. Decision Tree Analysis: Comparing Entropy vs GINI Index splitting criteria
+2. Support Vector Machine (SVM) Analysis: Comparing different kernel functions
+
+The analysis includes training, evaluation, visualization, and detailed reporting
+for both classification algorithms.
 """
 
 import os
