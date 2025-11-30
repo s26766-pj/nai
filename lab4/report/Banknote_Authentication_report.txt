@@ -1,0 +1,90 @@
+
+================================================================================
+RESEARCH REPORT: Decision Tree Analysis - Entropy vs GINI Index
+Dataset: Banknote Authentication
+================================================================================
+
+1. DATASET OVERVIEW
+-------------------
+- Total Samples: 1372
+- Features: 4
+- Training Samples: 960
+- Test Samples: 412
+- Classes: [0 1]
+
+2. METHODOLOGY
+-------------
+This analysis compares Decision Tree algorithms using two splitting criteria:
+- Entropy (Information Gain): Based on Shannon's entropy
+- GINI Index: Measures impurity
+
+Both criteria were tested with varying maximum depths to analyze:
+- Impact of tree depth on performance
+- Overfitting behavior
+- Optimal depth for each criterion
+
+3. KEY FINDINGS
+---------------
+
+3.1 Best Performance
+
+Entropy (Best):
+  - Max Depth Limit: depth_7
+  - Actual Depth: 6
+  - Test Accuracy: 0.9927
+  - Precision: 0.9927
+  - Recall: 0.9927
+  - F1-Score: 0.9927
+  - Nodes: 27, Leaves: 14
+
+GINI Index (Best):
+  - Max Depth Limit: depth_7
+  - Actual Depth: 7
+  - Test Accuracy: 0.9879
+  - Precision: 0.9880
+  - Recall: 0.9879
+  - F1-Score: 0.9879
+  - Nodes: 45, Leaves: 23
+
+3.2 Depth Analysis
+
+The analysis shows how tree depth affects model performance:
+
+ Max_Depth  Entropy_Train_Acc  Entropy_Test_Acc  GINI_Train_Acc  GINI_Test_Acc  Entropy_Actual_Depth  GINI_Actual_Depth
+         3           0.958333          0.944175        0.945833       0.924757                     3                  3
+         5           0.993750          0.978155        0.996875       0.985437                     5                  5
+         7           1.000000          0.992718        1.000000       0.987864                     6                  7
+        10           1.000000          0.992718        1.000000       0.987864                     6                  7
+        15           1.000000          0.992718        1.000000       0.987864                     6                  7
+        20           1.000000          0.992718        1.000000       0.987864                     6                  7
+       999           1.000000          0.992718        1.000000       0.987864                     6                  7
+
+Key Observations:
+- Optimal depth varies between Entropy and GINI
+- Overfitting increases with depth (Train Acc - Test Acc gap)
+- Both criteria show similar patterns but may differ in optimal depth
+
+
+3.3 Comparison Summary
+----------------------
+Winner: Entropy (Difference: 0.0049)
+
+4. CONCLUSIONS
+--------------
+Based on the analysis of Banknote Authentication:
+
+1. Both Entropy and GINI Index are effective splitting criteria
+2. Optimal tree depth is critical for preventing overfitting
+3. The best criterion may depend on the specific dataset characteristics
+4. Deeper trees tend to overfit, showing higher train accuracy but lower test accuracy
+
+5. RECOMMENDATIONS
+------------------
+1. Use cross-validation to determine optimal depth
+2. Monitor train-test accuracy gap to detect overfitting
+3. Consider pruning techniques for deeper trees
+4. Test both criteria and select based on validation performance
+
+================================================================================
+Report generated successfully.
+================================================================================
