@@ -1,0 +1,90 @@
+
+================================================================================
+RESEARCH REPORT: Decision Tree Analysis - Entropy vs GINI Index
+Dataset: Pima Indians Diabetes
+================================================================================
+
+1. DATASET OVERVIEW
+-------------------
+- Total Samples: 768
+- Features: 8
+- Training Samples: 537
+- Test Samples: 231
+- Classes: [0 1]
+
+2. METHODOLOGY
+-------------
+This analysis compares Decision Tree algorithms using two splitting criteria:
+- Entropy (Information Gain): Based on Shannon's entropy
+- GINI Index: Measures impurity
+
+Both criteria were tested with varying maximum depths to analyze:
+- Impact of tree depth on performance
+- Overfitting behavior
+- Optimal depth for each criterion
+
+3. KEY FINDINGS
+---------------
+
+3.1 Best Performance
+
+Entropy (Best):
+  - Max Depth Limit: depth_5
+  - Actual Depth: 5
+  - Test Accuracy: 0.7316
+  - Precision: 0.7239
+  - Recall: 0.7316
+  - F1-Score: 0.7249
+  - Nodes: 45, Leaves: 23
+
+GINI Index (Best):
+  - Max Depth Limit: depth_7
+  - Actual Depth: 7
+  - Test Accuracy: 0.7922
+  - Precision: 0.7890
+  - Recall: 0.7922
+  - F1-Score: 0.7851
+  - Nodes: 105, Leaves: 53
+
+3.2 Depth Analysis
+
+The analysis shows how tree depth affects model performance:
+
+ Max_Depth  Entropy_Train_Acc  Entropy_Test_Acc  GINI_Train_Acc  GINI_Test_Acc  Entropy_Actual_Depth  GINI_Actual_Depth
+         3           0.793296          0.727273        0.789572       0.727273                     3                  3
+         5           0.826816          0.731602        0.843575       0.766234                     5                  5
+         7           0.888268          0.727273        0.910615       0.792208                     7                  7
+        10           0.966480          0.705628        0.992551       0.774892                    10                 10
+        15           1.000000          0.731602        1.000000       0.761905                    12                 12
+        20           1.000000          0.731602        1.000000       0.761905                    12                 12
+       999           1.000000          0.731602        1.000000       0.761905                    12                 12
+
+Key Observations:
+- Optimal depth varies between Entropy and GINI
+- Overfitting increases with depth (Train Acc - Test Acc gap)
+- Both criteria show similar patterns but may differ in optimal depth
+
+
+3.3 Comparison Summary
+----------------------
+Winner: GINI Index (Difference: 0.0606)
+
+4. CONCLUSIONS
+--------------
+Based on the analysis of Pima Indians Diabetes:
+
+1. Both Entropy and GINI Index are effective splitting criteria
+2. Optimal tree depth is critical for preventing overfitting
+3. The best criterion may depend on the specific dataset characteristics
+4. Deeper trees tend to overfit, showing higher train accuracy but lower test accuracy
+
+5. RECOMMENDATIONS
+------------------
+1. Use cross-validation to determine optimal depth
+2. Monitor train-test accuracy gap to detect overfitting
+3. Consider pruning techniques for deeper trees
+4. Test both criteria and select based on validation performance
+
+================================================================================
+Report generated successfully.
+================================================================================
