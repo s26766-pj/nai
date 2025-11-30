@@ -6,8 +6,6 @@ Handles training of decision trees with different criteria and depths
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-import warnings
-warnings.filterwarnings('ignore')
 
 
 class DecisionTreeTrainer:

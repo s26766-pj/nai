@@ -10,8 +10,6 @@ Based on:
 import pandas as pd
 import numpy as np
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Import training module
 from .decision_tree_training import DecisionTreeTrainer

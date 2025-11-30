@@ -6,8 +6,6 @@ Analyzes SVM models with different kernels and parameters
 import pandas as pd
 import numpy as np
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Import training module
 from .svm_training import SVMTrainer

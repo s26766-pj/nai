@@ -12,8 +12,6 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from mpl_toolkits.mplot3d import Axes3D
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Set style for better plots
 plt.style.use('seaborn-v0_8-darkgrid')

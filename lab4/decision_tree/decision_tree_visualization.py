@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Set style for better plots
 plt.style.use('seaborn-v0_8-darkgrid')

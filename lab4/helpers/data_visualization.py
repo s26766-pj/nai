@@ -7,8 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-import warnings
-warnings.filterwarnings('ignore')
 
 # Set style for better plots
 plt.style.use('seaborn-v0_8-darkgrid')
