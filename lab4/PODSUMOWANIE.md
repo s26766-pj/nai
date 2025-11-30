@@ -216,5 +216,5 @@ Zbiór bardzo łatwy. Wszystkie modele wypadają świetnie.
 | **SVM RBF** | **0.75–0.78** |
 
 **Wniosek:**  
-Zbiór nieliniowy – RBF zdecydowanie najlepszy.
+Zbiór nieliniowy – Drzewo decyzyjne wypada dobrze, ale svm rbf wydaje się być stabilniejszy.
 
