@@ -218,3 +218,30 @@ Zbiór bardzo łatwy. Wszystkie modele wypadają świetnie.
 **Wniosek:**  
 Zbiór nieliniowy – Drzewo decyzyjne wypada dobrze, ale svm rbf wydaje się być stabilniejszy.
 
+# 9. Wywołania klasyfikatorów dla przykładowych danych wejściowych
+
+## Banknote Authentication
+### Drzewo decyzyjne (DT):
+```bash
+python predict_banknote.py --model "dt" --variance -2.8391 --skewness -6.63 --curtosis 10.4849 --entropy -0.42113
+```
+![](report/bn-dt.png)
+
+### Maszyna wektorów nośnych (SVM):
+```bash
+python predict_banknote.py --model "svm" --variance -2.8391 --skewness -6.63 --curtosis 10.4849 --entropy -0.42113
+```
+![](report/bn-dt.png)
+
+## Pima Indians Diabetes
+### Drzewo decyzyjne (DT):
+```bash
+python predict_diabetes.py --model "dt" --pregnancies 3 --glucose 78 --bloodpressure 50 --skinthickness 32 --insulin 88 --bmi 31.0 --diabetespedigreefunction 0.248 --age 26
+```
+![](report/pid-dt.png)
+
+### Maszyna wektorów nośnych (SVM):
+```bash
+python predict_diabetes.py --model "svm" --pregnancies 3 --glucose 78 --bloodpressure 50 --skinthickness 32 --insulin 88 --bmi 31.0 --diabetespedigreefunction 0.248 --age 26
+```
+![](report/pid-dt.png)
