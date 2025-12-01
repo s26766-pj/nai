@@ -231,7 +231,7 @@ python predict_banknote.py --model "dt" --variance -2.8391 --skewness -6.63 --cu
 ```bash
 python predict_banknote.py --model "svm" --variance -2.8391 --skewness -6.63 --curtosis 10.4849 --entropy -0.42113
 ```
-![](report/bn-dt.png)
+![](report/bn-svm.png)
 
 ## Pima Indians Diabetes
 ### Drzewo decyzyjne (DT):
@@ -244,4 +244,4 @@ python predict_diabetes.py --model "dt" --pregnancies 3 --glucose 78 --bloodpres
 ```bash
 python predict_diabetes.py --model "svm" --pregnancies 3 --glucose 78 --bloodpressure 50 --skinthickness 32 --insulin 88 --bmi 31.0 --diabetespedigreefunction 0.248 --age 26
 ```
-![](report/pid-dt.png)
+![](report/pid-svm.png)
