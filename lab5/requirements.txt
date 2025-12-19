@@ -1,0 +1,8 @@
+tensorflow
+matplotlib
+numpy
+nnv
+pydot
+graphviz
+keras_tuner
+tensorflow_datasets
