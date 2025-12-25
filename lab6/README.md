@@ -1,15 +1,20 @@
-Autorzy:
-Kamil Suchomski
-Kamil Koniak
+## Autorzy:<br>
+Kamil Suchomski<br>
+Kamil Koniak<br>
 
-Problem:
+## Problem:<br>
 Zbudować prototyp maszyny do gry w "Baba Jaga patrzy".
 - Narysować celownik na twarzy celu
 - Nie strzelać gdy uczestnik się poddaje
 
-Rozwiązanie:
-Aplikacja wykorzystująca OpenCV do przechwytywania strumienia z kamery i wykrywania twarzy.
-Aplikacja rysuje celownik na wykrytych twarzach.
+## Rozwiązanie:<br>
+Aplikacja wykorzystująca OpenCV do przechwytywania strumienia z kamery.<br>
+Gdy obiekt zostaje zidentyfikowany pojawia się komunikat "HANDS UP" oraz aplikacja umieszcza celownik między oczami.<br>
+Gdy obiekt poddaje się (podnosi ręce do góry), pojawia się komunikat "BACK AWAY".<br>
+Gdy obiekt nie stosuje się do poleceń zostaje "zastrzelony".
+
+## Prezentacja
+`babajaga.mp4` - plik wideo z demonstracją programu
 
 ## Instalacja
 
@@ -39,13 +44,6 @@ Użycie konkretnej kamery USB (np. kamera o indeksie 1):
 python camera_stream.py --camera 1
 ```
 
-### Zaawansowane opcje
-
-Z metodą wykrywania twarzy DNN (wymaga dodatkowych plików):
-```bash
-python camera_stream.py --method dnn
-```
-
 Z niestandardową rozdzielczością (dla kamer USB):
 ```bash
 python camera_stream.py --camera 1 --width 1280 --height 720
@@ -56,9 +54,4 @@ Z niestandardową liczbą klatek na sekundę:
 python camera_stream.py --camera 1 --fps 60
 ```
 
-<video width="640" height="480" controls>
-  <source src="babajaga.mp4" type="video/mp4">
-</video>
 
-
-![](babajaga.mp4)
