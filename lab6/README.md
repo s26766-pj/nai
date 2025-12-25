@@ -61,4 +61,4 @@ python camera_stream.py --camera 1 --fps 60
 </video>
 
 
-
+![](babajaga.mp4)
