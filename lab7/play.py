@@ -1,4 +1,8 @@
 """
+Autors:
+Kamil Suchomski s21974
+Kamil Koniak s26766
+
 Play Snake Game with Trained RL Agent
 Loads a trained model and plays the game.
 """
@@ -8,7 +12,7 @@ from snake_game import SnakeGame
 from rl_agent import DQNAgent
 
 
-def play_with_agent(model_path='models/snake_dqn_final.pth', num_games=5):
+def play_with_agent(model_path='models/snake_dqn_final.pth', num_games=10):
     """
     Play the game with a trained agent.
     
@@ -74,4 +78,4 @@ if __name__ == '__main__':
     if not os.path.exists(model_path):
         print("No trained model found. Please run train.py first.")
     else:
-        play_with_agent(model_path=model_path, num_games=5)
+        play_with_agent(model_path=model_path, num_games=10)

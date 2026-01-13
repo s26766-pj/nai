@@ -1,3 +1,7 @@
+# Autorzy:
+Kamil Suchomski s21974
+Kamil Koniak s26766
+
 # Problem:
 
 Chcemy stworzyć dobrego gracza w grę Snake
@@ -33,7 +37,7 @@ Uruchomieie gry z agentem:
 python play.py
 ```
 
-Komenda uruchomi 5 gier z agentem.
+Komenda uruchomi 10 gier z agentem.
 
 ### Trening agenta
 
