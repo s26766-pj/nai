@@ -1,5 +1,5 @@
 # Autorzy:
-Kamil Suchomski s21974\n
+Kamil Suchomski s21974 /n
 Kamil Koniak s26766
 
 # Problem:
