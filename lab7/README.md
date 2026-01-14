@@ -109,6 +109,7 @@ lab7/
 ├── train.py           # Skrypt trenujący
 ├── play.py            # Uruchomienie gry z agentem
 ├── requirements.txt   # Zależności Python
+├── snakeRLdemo.mp4    # Film demonstrujący działanie 
 └── README.md          # Ten plik
 ```
 
