@@ -96,10 +96,6 @@ Wynik / ilośc gier
 
 ![Wynik / ilośc gier](training_progress.png)
 
-Średni wynik / ilość gier
-
-![Wynik / ilośc gier](training_progress_mean.png)
-
 ## Struktura projektu
 
 ```
